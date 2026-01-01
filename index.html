@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matrix Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="center">
+
+  <h1>Matrix Tool</h1>
+  <p class="subtitle">Choose what you want to do</p>
+
+  <div class="menu">
+    <button onclick="go('add')">➕ Addition</button>
+    <button onclick="go('multiply')">✖️ Multiplication</button>
+    <button onclick="go('det')">📐 Determinant</button>
+    <button onclick="go('inverse')">🔁 Inverse</button>
+  </div>
+
+  <script>
+    function go(type) {
+      window.location.href = `matrix.html?op=${type}`;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matrix Operation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="index.html" class="back">← Back</a>
+  <h2 id="title"></h2>
+
+  <div class="controls">
+    Rows:
+    <input type="number" id="rows" value="2" min="1">
+    Cols:
+    <input type="number" id="cols" value="2" min="1">
+    <button id="generate">Generate</button>
+  </div>
+
+  <div class="matrices">
+    <div>
+      <h3>Matrix A</h3>
+      <div id="matrixA"></div>
+    </div>
+
+    <div id="matrixBWrapper">
+      <h3>Matrix B</h3>
+      <div id="matrixB"></div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="actionBtn">Calculate</button>
+  </div>
+
+  <div class="result">
+    <h3>Result</h3>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
