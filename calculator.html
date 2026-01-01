@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="calculator-card">
+    <h2 id="title">Matrix Calculator</h2>
+
+    <div class="dimension-select">
+      <div class="dim-card">
+        <label>Rows:
+          <select id="rows">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </label>
+      </div>
+      <div class="dim-card">
+        <label>Cols:
+          <select id="cols">
+            <option>1</option>
+            <option selected>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </label>
+      </div>
+      <button id="generate" class="generate-btn">Generate Matrix</button>
+    </div>
+
+    <div class="matrix-container">
+      <div id="matrixAWrap" class="matrix-card">
+        <h4>Matrix A</h4>
+        <div id="matrixA"></div>
+      </div>
+
+      <div id="matrixBWrap" class="matrix-card">
+        <h4>Matrix B</h4>
+        <div id="matrixB"></div>
+      </div>
+    </div>
+
+    <button id="calc" class="calc-btn">Calculate</button>
+    <div class="result-box" id="result"></div>
+  </div>
+
+  <footer class="footer">
+    <p>View this project on <a href="#" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>

@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Matrix Lab</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Toolkit – Complete Matrix Calculator</title>
+  <meta name="description" content="Matrix Toolkit is an all-in-one online tool for matrix addition, subtraction, multiplication, determinant, inverse, and transpose.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="center">
+<body>
+  <div class="main-container">
+    <h1>Matrix Toolkit</h1>
+    <p class="intro">All-in-one tool for matrix calculations. Choose your operation below:</p>
 
-  <h1>Matrix Lab</h1>
-  <p class="subtitle">
-    A clean playground for matrix operations.<br>
-    Built for students, learners, and curious minds.
-  </p>
-
-  <p class="desc">
-    Pick an operation, enter your matrix, and see the result instantly.
-    No clutter. No math horror.
-  </p>
-
-  <div class="menu">
-    <button onclick="go('add')">➕ Addition</button>
-    <button onclick="go('sub')">➖ Subtraction</button>
-    <button onclick="go('mul')">✖️ Multiplication</button>
-    <button onclick="go('det')">📐 Determinant</button>
-    <button onclick="go('inverse')">🔁 Inverse</button>
-    <button onclick="go('transpose')">🔄 Transpose</button>
-    <button onclick="go('rank')">📊 Rank</button>
-    <button onclick="go('rref')">🧮 RREF</button>
-    <button onclick="go('scalar')">🔢 Scalar Multiply</button>
+    <div class="operations-grid">
+      <div class="op-card" onclick="go('add')"><h2>Addition</h2><p>Sum two matrices</p></div>
+      <div class="op-card" onclick="go('sub')"><h2>Subtraction</h2><p>Subtract one matrix from another</p></div>
+      <div class="op-card" onclick="go('mul')"><h2>Multiplication</h2><p>Multiply two matrices</p></div>
+      <div class="op-card" onclick="go('det')"><h2>Determinant</h2><p>Calculate the determinant of a matrix</p></div>
+      <div class="op-card" onclick="go('inv')"><h2>Inverse</h2><p>Find the inverse of a matrix</p></div>
+      <div class="op-card" onclick="go('transpose')"><h2>Transpose</h2><p>Transpose a matrix</p></div>
+    </div>
   </div>
 
+  <footer class="footer">
+    <p>View this project on <a href="#" target="_blank">GitHub</a></p>
+  </footer>
+
   <script>
-    function go(op) {
-      location.href = `matrix.html?op=${op}`;
+    function go(op){
+      window.location.href = `calculator.html?op=${op}`;
     }
   </script>
-
 </body>
 </html>
