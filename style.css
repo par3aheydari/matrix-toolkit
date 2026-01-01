@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #020617, #0f172a);
+    background: radial-gradient(circle at top, #020617, #020617 40%, #000);
     color: #e5e7eb;
     font-family: system-ui, sans-serif;
     padding: 30px;
@@ -9,40 +9,32 @@ body {
     text-align: center;
   }
   
-  h1, h2 {
+  .subtitle {
+    opacity: 0.7;
     margin-bottom: 10px;
   }
   
-  .subtitle {
-    opacity: 0.7;
-    margin-bottom: 30px;
+  .desc {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+    opacity: 0.6;
   }
   
   .menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 16px;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
   }
   
-  button {
-    background: #2563eb;
-    border: none;
-    color: white;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.2s;
+  .panel {
+    max-width: 900px;
+    margin: auto;
   }
   
-  button:hover {
-    transform: translateY(-2px);
-    background: #1d4ed8;
-  }
-  
-  .controls, .actions {
+  .controls {
     margin: 20px 0;
   }
   
@@ -52,12 +44,30 @@ body {
     flex-wrap: wrap;
   }
   
-  input[type="number"] {
-    width: 70px;
-    padding: 6px;
+  input, button {
     background: #020617;
     color: #e5e7eb;
     border: 1px solid #334155;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #1e293b;
+  }
+  
+  .primary {
+    background: #2563eb;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .primary:hover {
+    background: #1d4ed8;
   }
   
   table {
@@ -65,7 +75,14 @@ body {
   }
   
   td {
-    padding: 3px;
+    padding: 4px;
+  }
+  
+  .result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #020617;
+    border-radius: 16px;
   }
   
   .back {

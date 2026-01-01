@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Matrix Tool</title>
+  <title>Matrix Lab</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="center">
 
-  <h1>Matrix Tool</h1>
-  <p class="subtitle">Choose what you want to do</p>
+  <h1>Matrix Lab</h1>
+  <p class="subtitle">
+    A clean playground for matrix operations.<br>
+    Built for students, learners, and curious minds.
+  </p>
+
+  <p class="desc">
+    Pick an operation, enter your matrix, and see the result instantly.
+    No clutter. No math horror.
+  </p>
 
   <div class="menu">
     <button onclick="go('add')">➕ Addition</button>
-    <button onclick="go('multiply')">✖️ Multiplication</button>
+    <button onclick="go('sub')">➖ Subtraction</button>
+    <button onclick="go('mul')">✖️ Multiplication</button>
     <button onclick="go('det')">📐 Determinant</button>
     <button onclick="go('inverse')">🔁 Inverse</button>
+    <button onclick="go('transpose')">🔄 Transpose</button>
+    <button onclick="go('rank')">📊 Rank</button>
+    <button onclick="go('rref')">🧮 RREF</button>
+    <button onclick="go('scalar')">🔢 Scalar Multiply</button>
   </div>
 
   <script>
-    function go(type) {
-      window.location.href = `matrix.html?op=${type}`;
+    function go(op) {
+      location.href = `matrix.html?op=${op}`;
     }
   </script>
 

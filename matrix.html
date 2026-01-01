@@ -10,33 +10,34 @@
   <a href="index.html" class="back">← Back</a>
   <h2 id="title"></h2>
 
-  <div class="controls">
-    Rows:
-    <input type="number" id="rows" value="2" min="1">
-    Cols:
-    <input type="number" id="cols" value="2" min="1">
-    <button id="generate">Generate</button>
-  </div>
+  <div class="panel">
 
-  <div class="matrices">
-    <div>
-      <h3>Matrix A</h3>
-      <div id="matrixA"></div>
+    <div class="controls">
+      Rows <input type="number" id="rows" value="2" min="1">
+      Cols <input type="number" id="cols" value="2" min="1">
+      <input type="number" id="scalar" placeholder="k" style="display:none">
+      <button id="generate">Generate</button>
     </div>
 
-    <div id="matrixBWrapper">
-      <h3>Matrix B</h3>
-      <div id="matrixB"></div>
+    <div class="matrices">
+      <div>
+        <h4>Matrix A</h4>
+        <div id="matrixA"></div>
+      </div>
+
+      <div id="matrixBWrap">
+        <h4>Matrix B</h4>
+        <div id="matrixB"></div>
+      </div>
     </div>
-  </div>
 
-  <div class="actions">
-    <button id="actionBtn">Calculate</button>
-  </div>
+    <button id="calc" class="primary">Calculate</button>
 
-  <div class="result">
-    <h3>Result</h3>
-    <div id="result"></div>
+    <div class="result-box">
+      <h4>Result</h4>
+      <div id="result"></div>
+    </div>
+
   </div>
 
   <script src="script.js"></script>
